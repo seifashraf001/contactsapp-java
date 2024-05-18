@@ -1,0 +1,44 @@
+.white-bg {
+    -fx-background-color: rgba(175, 173, 173, 0.27);
+}
+
+.theme-color-bg {
+    -fx-background-color: rgba(15, 20, 30, 0.92)
+}
+
+.transparent-bg {
+    -fx-background-color: rgba(0, 0, 0, 0);
+}
+
+.add-btn {
+    -fx-background-radius: 30px;
+    -fx-cursor: hand;
+    -fx-border-width: 0;
+    -fx-background-color: rgba(15, 20, 30, 0.92);
+    -fx-text-fill: white;
+    -fx-background-insets: 100% 100%;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.3) , 10, 0.5, 0, 0 );
+}
+
+.add-btn:pressed {
+    -fx-background-color: rgba(50, 50, 52, 0.92);
+}
+
+.cancel-btn {
+    -fx-background-radius: 30px;
+    -fx-cursor: hand;
+    -fx-border-width: 0;
+    -fx-background-color: rgba(203, 53, 53, 0.92);
+    -fx-text-fill: white;
+    -fx-background-insets: 100% 100%;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.3) , 10, 0.5, 0, 0 );;
+}
+
+.cancel-btn:pressed {
+    -fx-background-color: rgba(141, 44, 44, 0.92);
+}
+
+.text-field {
+    -fx-background-radius: 10px;
+    -fx-background-color: white;
+}

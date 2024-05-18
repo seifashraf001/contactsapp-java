@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<StackPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="us.proj.contactsapp.controllers.EditMenuController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="white-bg" stylesheets="@css/edit-menu.css">
+         <children>
+            <AnchorPane layoutX="12.0" layoutY="9.0" prefHeight="683.0" prefWidth="576.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="141.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="47.0" layoutY="237.0" text="Name" />
+                  <TextField fx:id="nameField" layoutX="47.0" layoutY="256.0" prefHeight="25.0" prefWidth="214.0" promptText="Ex: Seif" styleClass="text-field" stylesheets="@css/edit-menu.css" />
+                  <Label layoutX="47.0" layoutY="300.0" text="Phone Number" />
+                  <TextField fx:id="phoneNumberField" layoutX="47.0" layoutY="317.0" prefHeight="25.0" prefWidth="214.0" promptText="Ex: 010, 011, 012, 015xxxxxxxx" />
+                  <Label layoutX="307.0" layoutY="237.0" text="Email" />
+                  <TextField fx:id="emailField" layoutX="309.0" layoutY="256.0" prefHeight="25.0" prefWidth="214.0" promptText="Ex: unknown123@domain.com" />
+                  <TextField fx:id="addressField" layoutX="47.0" layoutY="373.0" prefHeight="25.0" prefWidth="214.0" promptText="Ex: Cairo, Elobour" />
+                  <Label layoutX="47.0" layoutY="356.0" text="Adress" />
+                  <Button fx:id="editBtn" layoutX="42.0" layoutY="462.0" mnemonicParsing="false" onAction="#editContact" prefHeight="41.0" prefWidth="214.0" styleClass="add-btn" stylesheets="@css/edit-menu.css" text="Update">
+                     <font>
+                        <Font name="Lucida Console" size="24.0" />
+                     </font></Button>
+                  <Line endX="235.0" layoutX="289.0" layoutY="227.0" startX="-245.0" />
+                  <Label layoutX="284.0" layoutY="72.0" text="Contacts App">
+                     <font>
+                        <Font name="Corbel" size="32.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="309.0" layoutY="300.0" text="Group" />
+                  <TextField fx:id="groupField" layoutX="309.0" layoutY="317.0" prefHeight="25.0" prefWidth="214.0" promptText="Ex: Work" />
+                  <Pane layoutX="-12.0" layoutY="169.0" prefHeight="32.0" prefWidth="600.0" styleClass="theme-color-bg" stylesheets="@css/edit-menu.css">
+                     <children>
+                        <Label layoutX="201.0" layoutY="-4.0" text="- Edit Contact -" textFill="WHITE">
+                           <font>
+                              <Font name="Corbel" size="32.0" />
+                           </font>
+                        </Label>
+                     </children></Pane>
+                  <Line endX="235.0" layoutX="299.0" layoutY="420.0" startX="-245.0" />
+                  <Line endX="235.0" layoutX="299.0" layoutY="598.0" startX="-245.0" />
+                  <Label layoutX="-12.0" layoutY="669.0" text="Note: you might need to refresh the table using the refresh button." />
+                  <Button fx:id="clearBtn" layoutX="320.0" layoutY="462.0" mnemonicParsing="false" onAction="#clearMenu" prefHeight="41.0" prefWidth="214.0" styleClass="add-btn" stylesheets="@css/edit-menu.css" text="Clear">
+                     <font>
+                        <Font name="Lucida Console" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="cancelBtn" layoutX="50.0" layoutY="511.0" mnemonicParsing="false" onAction="#cancelMenu" prefHeight="41.0" prefWidth="481.0" styleClass="cancel-btn" stylesheets="@css/edit-menu.css" text="Cancel">
+                     <font>
+                        <Font name="Lucida Console" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

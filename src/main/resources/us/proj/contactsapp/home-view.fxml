@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="808.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="us.proj.contactsapp.controllers.HomeController">
+   <children>
+      <AnchorPane prefHeight="800.0" prefWidth="1200.0" styleClass="transparent" stylesheets="@css/home.css">
+         <children>
+            <BorderPane layoutX="255.0" layoutY="191.0" prefHeight="800.0" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <AnchorPane prefHeight="40.0" prefWidth="1200.0" styleClass="header-color" stylesheets="@css/home.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button fx:id="aboutBtn" layoutX="1106.0" layoutY="5.0" mnemonicParsing="false" onAction="#onAboutClick" styleClass="about-btn-settings" stylesheets="@css/home.css" text="About" />
+                        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@logo.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="WHITE" layoutX="78.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contacts">
+                           <font>
+                              <Font name="Corbel" size="28.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="searchBox" onKeyReleased="#handleSearch" layoutX="532.0" layoutY="11.0" prefHeight="25.0" prefWidth="172.0" promptText="Search" stylesheets="@css/home.css" />
+                        <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="500.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@search.png" />
+                           </image>
+                        </ImageView>
+
+                     </children>
+                  </AnchorPane>
+               </top>
+               <left>
+                  <AnchorPane prefHeight="760.0" prefWidth="37.0" styleClass="sidebar-color" stylesheets="@css/home.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button fx:id="addBtn" layoutY="104.0" mnemonicParsing="false" onAction="#onAddClick" styleClass="add-btn-settings" stylesheets="@css/home.css" text="ADD" />
+                        <Button fx:id="editBtn" layoutX="1.0" layoutY="175.0" mnemonicParsing="false" onAction="#onEditClick" styleClass="edit-btn-settings" stylesheets="@css/home.css" text="Edit" />
+                        <Button fx:id="refreshBtn" alignment="BOTTOM_CENTER" contentDisplay="BOTTOM" layoutX="7.0" layoutY="35.0" minHeight="32.0" minWidth="39.0" mnemonicParsing="false" onAction="#onRefreshClick" prefHeight="32.0" prefWidth="39.0" styleClass="refresh-btn" stylesheets="@css/home.css" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="9.0" />
+                           </font></Button>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="transparent" stylesheets="@css/home.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="461.0" layoutY="280.0" prefHeight="763.0" prefWidth="1141.0" styleClass="transparent" stylesheets="@css/home.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="-19.0" layoutY="723.0" prefHeight="40.0" prefWidth="1160.0" styleClass="header-color" stylesheets="@css/home.css">
+                                 <children>
+                                    <Button fx:id="deleteBtn" layoutX="540.0" mnemonicParsing="false" onAction="#onDeleteClick" styleClass="delete-btn-settings" stylesheets="@css/home.css" text="Delete" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <TableView fx:id="tableView" prefHeight="700.0" prefWidth="1110.0" stylesheets="@css/home.css" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="10.0">
+                          <columns>
+                            <TableColumn fx:id="contactID" prefWidth="34.0" text="ID" />
+                            <TableColumn fx:id="name" minWidth="6.0" prefWidth="244.0" text="Name" />
+                              <TableColumn fx:id="phoneNumber" minWidth="0.0" prefWidth="205.0" text="Phone Number" />
+                              <TableColumn fx:id="address" minWidth="0.0" prefWidth="315.0" text="Adress" />
+                              <TableColumn fx:id="email" prefWidth="206.0" text="Email" />
+                              <TableColumn fx:id="groupName" prefWidth="114.0" text="Group" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

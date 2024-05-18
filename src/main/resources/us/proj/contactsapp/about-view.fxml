@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="us.proj.contactsapp.controllers.AboutMenuController">
+   <children>
+      <ImageView fitHeight="118.0" fitWidth="115.0" layoutX="14.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="129.0" layoutY="102.0" text="Contacts App v1.0.0">
+         <font>
+            <Font name="Lucida Console" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="129.0" layoutY="132.0" text="Organize and manage your contacts effortlessly">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="129.0" layoutY="152.0" text="with this intuitive desktop application.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="129.0" layoutY="172.0" text="Stay connected and keep your contacts at your fingertips.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="129.0" layoutY="192.0" text="Enjoy the simplicity and efficiency">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Pane layoutY="14.0" prefHeight="38.0" prefWidth="86.0" style="-fx-background-color: #0F141E;">
+         <children>
+            <Label layoutX="10.0" layoutY="7.0" text="About" textFill="WHITE">
+               <font>
+                  <Font name="Lucida Console" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="161.0" layoutY="260.0" text="Seif Aldeen Ashraf" />
+      <Label layoutX="268.0" layoutY="260.0" text="Basmala Ashraf" />
+      <Label layoutX="365.0" layoutY="260.0" text="Bassant yasser" />
+      <Label layoutX="363.0" layoutY="282.0" text="Hana Ahmed" />
+      <Label layoutX="450.0" layoutY="260.0" text="Maram Nabil" />
+      <Label layoutX="163.0" layoutY="279.0" text="Shahenda Wael" />
+      <Label layoutX="268.0" layoutY="279.0" text="Doaa Mohamed" />
+      <Button fx:id="okBtn" layoutX="303.0" layoutY="447.0" mnemonicParsing="false" onAction="#onOkClick" prefHeight="25.0" prefWidth="69.0" styleClass="ok-btn" stylesheets="@css/about-menu.css" text="OK" />
+      <Pane layoutX="-7.0" layoutY="265.0" prefHeight="25.0" prefWidth="159.0" style="-fx-background-color: #0F141E;" />
+      <Label layoutX="20.0" layoutY="266.0" text="Created By:" textFill="WHITE">
+         <font>
+            <Font name="Lucida Console" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

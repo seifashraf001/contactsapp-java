@@ -1,0 +1,14 @@
+.ok-btn {
+    -fx-background-radius: 30px;
+    -fx-cursor: hand;
+    -fx-border-width: 0;
+    -fx-background-color: rgba(15, 20, 30, 0.92);
+    -fx-font-weight: 600;
+    -fx-text-fill: white;
+    -fx-background-insets: 100% 100%;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.3) , 10, 0.5, 0, 0 );
+}
+
+.ok-btn:pressed {
+    -fx-background-color: rgba(50, 50, 52, 0.92);
+}
